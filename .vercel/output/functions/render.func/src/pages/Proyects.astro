@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const Proyects = [
+  {
+    name: "Old-Portfolio",
+    photo: "../public/images-proyects/old-portfolio.jpg",
+    link: "https://port-folio-drab.vercel.app/",
+    description: "Antiguo portfolio construido con React puedes verlo dando click en la imagen.",
+  },
+  {
+    name: "E-Comerce-Shine",
+    photo: "../public/images-proyects/shine.jpg",
+    link: "https://e-commerce-clothing-three.vercel.app/",
+    description:
+      "Shine es un E-Comerce de ropa que permite a los usuarios comprar productos a traves de internet. Fue construido en conjunto con 6 desarrolladores que utilizamos un conjunto de tecnologías específicas para implementar la plataforma. En particular, se utilizaron React, Redux, CSS, Express y MongoDB. Puedes ver la tienda dando click en la imagen.",
+  },
+];
+---
+
+<Layout title="Proyects">
+  <section class="lg:pt-10">
+    <h3 class="font-presStart2">Mi Experiencia a traves de Proyectos</h3>
+    <div class="proyect">
+      {
+        Proyects.map((proyect) => (
+          <div class="text-gray-800 text-xl text-center card">
+            <h4 class="font-presStart2">{proyect.name}</h4>
+            <a href={proyect.link}>
+              <img class="my-5" src={proyect.photo} />
+            </a>
+            <p class="text-start">{proyect.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+  <style>
+    .proyect {
+      padding: 2rem 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid rgba(225, 225, 225, 0.4);
+      border-right: 1px solid rgba(225, 225, 225, 0.2);
+      border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+      box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(2px);
+      padding: 1em;
+      background: rgb(255 255 255 / 20%);
+    }
+  </style>
+</Layout>

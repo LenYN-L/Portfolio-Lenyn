@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+const socialNetwork = [
+  { icon: "akar-icons:telegram-fill", link: "https://t.me/lenYN12" },
+  { icon: "mdi:github", link: "https://github.com/LenYN-L" },
+  { icon: "mdi:linkedin", link: "https://www.linkedin.com/in/lenynbejar/" },
+];
+---
+
+<footer class="relative text-center mt-5">
+  <section class="flex justify-center gap-4">
+    {
+      socialNetwork.map((social) => (
+        <a href={social.link}>
+          <Icon class="w-10 lg:w-12" name={social.icon} />
+        </a>
+      ))
+    }
+  </section>
+  <img
+    class="w-10 mx-auto mt-5"
+    src="../public/images/DALL-E astronaut.png"
+    alt="astronaut"
+  />
+</footer>

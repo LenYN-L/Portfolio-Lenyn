@@ -1,0 +1,45 @@
+---
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+---
+
+<header class="lg:flex py-10 gap-50 items-center">
+  <Astronav>
+    <div class="flex w-full justify-between">
+      <a class="title font-presStart2 text-2xl" href="/">Lenyn.Dev</a>
+      <div class="block lg:hidden">
+        <MenuIcon class="w-4 h-4 text-gray-800 transition-transform" />
+      </div>
+    </div>
+    <MenuItems class="hidden lg:flex">
+      <ul
+        class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 border-2 p-1 mt-2 border-neutral-900 lg:border-none lg:mt-0"
+      >
+        <li class="hover:-translate-y-1"><a href="/Aboutme">About</a></li>
+        <li class="hover:-translate-y-1"><a href="Contact">Contact</a></li>
+        <li class="hover:-translate-y-1"><a href="Proyects">Proyects</a></li>
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>
+
+<style>
+  .title {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 10ch;
+    animation: typing 2s steps(10), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+</style>

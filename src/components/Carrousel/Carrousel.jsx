@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import img1 from '../../../public/images-profile/img1.jpeg'
-import img2 from '../../../public/images-profile/img2.jpeg'
-import img3 from '../../../public/images-profile/img3.jpeg'
+import img1 from '../../../public/images-profile/img1.jpg'
+import img2 from '../../../public/images-profile/img2.jpg'
 
 import './Carrousel.css'
 

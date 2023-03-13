@@ -1,19 +1,18 @@
 ---
-import Carrousel from "./Carrousel/Carrousel";
+import DalleAstrounatAwesome from "../images/imagesProfile/astronautRMBGProfile.png";
 ---
 
-<section class="h-full flex items-center justify-center">
-  <div class="flex flex-wrap justify-around items-end w-full gap-10">
-    <!-- <img class="w-96" src="../public/images/DALL-E Astronaut.png" alt="lenyn" /> -->
-    <div class="w-72">
-      <Carrousel client:load/>
-    </div>
-    <div class="border-b-8 border-black">
-      <h1
-        class="font-presStart2 text-center text-3xl leading-snug lg:leading-snug lg:text-5xl lg:animate-bounce"
-      >
-        Hello <br />I'm Lenyn Bejar<br /> Full-Stack <br />Developer
-      </h1>
-    </div>
+<section
+  class="h-full grid grid-cols-1 sm:grid-cols-2 place-items-end justify-between gap-4 pb-24"
+>
+  <div class="max-w-full">
+    <img src={DalleAstrounatAwesome} alt="astronaut Awesome" />
+  </div>
+  <div class="border-b-8 border-black max-w-full">
+    <h1
+      class="font-presStart2 animate-bounce text-center text-3xl leading-snug lg:leading-snug lg:text-5xl"
+    >
+      Hello I'm Lenyn Bejar Full-Stack Developer
+    </h1>
   </div>
 </section>

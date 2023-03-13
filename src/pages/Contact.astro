@@ -1,12 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CodeInCoffe from '../images/imagesIA/codeInCoffe.jpg'
+import CodeInCoffe from "../images/imagesIA/DALL-E-astronaut.png";
 ---
 
 <Layout title="Contact">
   <section class="h-full grid gap-10 lg:pt-10 lg:grid-cols-2">
     <form method="POST" id="form" class="needs-validation w-full" novalidate>
-      <legend class="font-presStart2 text-2xl lg:text-4xl text-center py-4 border-t-8 border-black">Send Me a Message!</legend>
+      <legend
+        class="font-presStart2 text-2xl lg:text-4xl text-center py-4 border-t-8 border-black"
+        >Send Me a Message!</legend
+      >
       <input
         type="checkbox"
         class="hidden"
@@ -60,7 +63,7 @@ import CodeInCoffe from '../images/imagesIA/codeInCoffe.jpg'
       <div id="result" class="font-presStart2 mt-3 text-center"></div>
     </form>
     <picture class="hidden lg:block max-w-2xl">
-      <img class="mix-blend-multiply grayscale" src={CodeInCoffe} alt="code">
+      <img class="mix-blend-multiply" src={CodeInCoffe} alt="code" />
     </picture>
   </section>
 

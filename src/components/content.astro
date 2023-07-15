@@ -1,18 +1,21 @@
 ---
-import DalleAstrounatAwesome from "../images/imagesProfile/astronautRMBGProfile.png"
+import DalleAstrounatAwesome from "../images/imagesProfile/astronautRMBGProfile.png";
+import Background from "./background.astro";
+import MyReactComponet from "../components/MyReactComponet";
 ---
 
-<section
-  class="h-full max-w-full grid grid-cols-1 sm:grid-cols-2 place-items-center justify-around m-auto gap-4"
->
-  <div class="max-w-lg">
+<section class="bg-slate-500 overflow-hidden h-full max-w-full">
+  <!-- class="h-full max-w-full grid grid-cols-1 sm:grid-cols-2 place-items-center justify-around m-auto gap-4 bg-slate-400" -->
+  <!-- <div class="max-w-lg">
     <img src={DalleAstrounatAwesome} alt="astronaut Awesome" />
-  </div>
-  <div class="border-b-8 border-black max-w-full">
+  </div> -->
+  <Background />
+  <!-- <MyReactComponet client:load /> -->
+  <!-- <div class="border-b-8 border-black max-w-full">
     <h1
       class="font-presStart2 text-center text-3xl leading-snug lg:leading-snug lg:text-4xl"
     >
-      Hello <br> I'm Lenyn Bejar Full-Stack Developer
+      Hello <br /> I'm Lenyn Bejar Full-Stack Developer
     </h1>
-  </div>
+  </div> -->
 </section>

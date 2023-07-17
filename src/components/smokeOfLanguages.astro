@@ -3,341 +3,341 @@ import CoffeAnimate from "../images/imagesProyects/coffee-animated-removeBG.gif"
 ---
 
 <div class="container">
-    <div class="row">
-        <i class="icon iconReact fa-brands fa-react"></i>
-        <i class="icon iconGithub fa-brands fa-github"></i>
-        <i class="icon iconSquereJs fa-brands fa-square-js"></i>
-        <i class="icon iconPython fa-brands fa-python"></i>
-        <i class="icon iconNodeJs fa-brands fa-node-js"></i>
-        <i class="icon iconNpm fa-brands fa-npm"></i>
-        <i class="icon iconCss3 fa-brands fa-css3-alt"></i>
-        <i class="icon iconHtml5 fa-brands fa-html5"></i>
-        <i class="icon iconGit fa-brands fa-git"></i>
-        <i class="icon iconLinux fa-brands fa-linux"></i>
-        <i class="icon iconJava fa-brands fa-java"></i>
-        <i class="icon iconDatabase fa-solid fa-database"></i>
-    </div>
-    <picture class="containerImgCoffee">
-        <img src={CoffeAnimate} alt="coffee" class="imgCoffee" />
-    </picture>
+  <div class="row">
+    <i class="icon iconReact fa-brands fa-react"></i>
+    <i class="icon iconGithub fa-brands fa-github"></i>
+    <i class="icon iconSquereJs fa-brands fa-square-js"></i>
+    <i class="icon iconPython fa-brands fa-python"></i>
+    <i class="icon iconNodeJs fa-brands fa-node-js"></i>
+    <i class="icon iconNpm fa-brands fa-npm"></i>
+    <i class="icon iconCss3 fa-brands fa-css3-alt"></i>
+    <i class="icon iconHtml5 fa-brands fa-html5"></i>
+    <i class="icon iconGit fa-brands fa-git"></i>
+    <i class="icon iconLinux fa-brands fa-linux"></i>
+    <i class="icon iconJava fa-brands fa-java"></i>
+    <i class="icon iconDatabase fa-solid fa-database"></i>
+  </div>
+  <picture class="containerImgCoffee">
+    <img src={CoffeAnimate} alt="coffee" class="imgCoffee" />
+  </picture>
 </div>
 
 <style>
-    .containerImgCoffee {
-        margin-left: auto;
-        margin-right: auto;
-        /* display: inline-block; */
-        /* background-color: black; */
-    }
-    .imgCoffee {
-        max-width: 300px;
-        mix-blend-mode: difference;
-        /* filter: grayscale(100%); */
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: auto;
-        font-size: 50px;
-    }
+  .containerImgCoffee {
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+    /* background-color: black; */
+  }
+  .imgCoffee {
+    max-width: 300px;
+    mix-blend-mode: difference;
+    /* filter: grayscale(100%); */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    font-size: 50px;
+  }
 
-    .row {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 400px;
-        /* position: absolute; */
-        z-index: -1;
-        padding: 0;
-        /* height: 100vh; */
-        top: 0;
-    }
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    /* position: absolute; */
+    z-index: -1;
+    padding: 0;
+    /* height: 100vh; */
+    top: 0;
+  }
 
-    .icon {
-        padding: 0 34px;
-        user-select: none;
-        color: white;
-    }
+  .icon {
+    padding: 0 34px;
+    user-select: none;
+    color: white;
+  }
 
-    .iconGithub {
-        animation: animate1 15s linear infinite;
-    }
-    @keyframes animate1 {
-        0% {
-            transform: translate(5vh, 30vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(10vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(15vh, 0vh);
-            opacity: 0%;
-        }
+  .iconGithub {
+    animation: animate1 15s linear infinite;
+  }
+  @keyframes animate1 {
+    0% {
+      transform: translate(5vh, 30vh);
+      opacity: 0%;
     }
 
-    .iconReact {
-        animation: animate2 8s linear infinite;
-    }
-    @keyframes animate2 {
-        0% {
-            transform: translate(10vh, 25vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+    50% {
+      transform: translate(10vh, 10vh);
+      opacity: 100%;
     }
 
-    .iconSquereJs {
-        animation: animate3 10s linear infinite;
+    100% {
+      transform: translate(15vh, 0vh);
+      opacity: 0%;
     }
-    @keyframes animate3 {
-        0% {
-            transform: translate(10vh, 40vh);
-            opacity: 0%;
-        }
+  }
 
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+  .iconReact {
+    animation: animate2 8s linear infinite;
+  }
+  @keyframes animate2 {
+    0% {
+      transform: translate(10vh, 25vh);
+      opacity: 0%;
     }
 
-    .iconPython {
-        animation: animate4 30s linear infinite;
-    }
-    @keyframes animate4 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+    50% {
+      transform: translate(5vh, 10vh);
+      opacity: 100%;
     }
 
-    .iconNodeJs {
-        animation: animate5 7s linear infinite;
+    100% {
+      transform: translate(5vh, 5vh);
+      opacity: 0%;
     }
-    @keyframes animate5 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
+  }
 
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+  .iconSquereJs {
+    animation: animate3 10s linear infinite;
+  }
+  @keyframes animate3 {
+    0% {
+      transform: translate(-10vh, 40vh);
+      opacity: 0%;
     }
 
-    .iconNpm {
-        animation: animate6 5s linear infinite;
-    }
-    @keyframes animate6 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+    50% {
+      transform: translate(-5vh, 10vh);
+      opacity: 100%;
     }
 
-    .iconTerminal {
-        animation: animate7 8s linear infinite;
+    100% {
+      transform: translate(2vh, 5vh);
+      opacity: 0%;
     }
-    @keyframes animate7 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
+  }
 
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+  .iconPython {
+    animation: animate4 30s linear infinite;
+  }
+  @keyframes animate4 {
+    0% {
+      transform: translate(15vh, 25vh);
+      opacity: 0%;
     }
 
-    .iconCss3 {
-        animation: animate8 20s linear infinite;
-    }
-    @keyframes animate8 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+    50% {
+      transform: translate(10vh, 10vh);
+      opacity: 100%;
     }
 
-    .iconHtml5 {
-        animation: animate9 30s linear infinite;
+    100% {
+      transform: translate(5vh, 5vh);
+      opacity: 0%;
     }
-    @keyframes animate9 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
+  }
 
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+  .iconNodeJs {
+    animation: animate5 7s linear infinite;
+  }
+  @keyframes animate5 {
+    0% {
+      transform: translate(5vh, 25vh);
+      opacity: 0%;
     }
 
-    .iconGit {
-        animation: animate10 10s linear infinite;
-    }
-    @keyframes animate10 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 0vh);
-            opacity: 0%;
-        }
+    50% {
+      transform: translate(10vh, 10vh);
+      opacity: 100%;
     }
 
-    .iconLinux {
-        animation: animate11 50s linear infinite;
+    100% {
+      transform: translate(15vh, 5vh);
+      opacity: 0%;
     }
-    @keyframes animate11 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
+  }
 
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 5vh);
-            opacity: 0%;
-        }
+  .iconNpm {
+    animation: animate6 5s linear infinite;
+  }
+  @keyframes animate6 {
+    0% {
+      transform: translate(-10vh, 30vh);
+      opacity: 0%;
     }
 
-    .iconGoogle {
-        animation: animate12 10s linear infinite;
-    }
-    @keyframes animate12 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
-
-        50% {
-            transform: translate(5vh, 5vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 0vh);
-            opacity: 0%;
-        }
+    50% {
+      transform: translate(-5vh, 10vh);
+      opacity: 100%;
     }
 
-    .iconJava {
-        animation: animate13 10s linear infinite;
+    100% {
+      transform: translate(0vh, 5vh);
+      opacity: 0%;
     }
-    @keyframes animate13 {
-        0% {
-            transform: translate(5vh, 25vh);
-            opacity: 0%;
-        }
+  }
 
-        50% {
-            transform: translate(5vh, 5vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 0vh);
-            opacity: 0%;
-        }
+  .iconTerminal {
+    animation: animate7 8s linear infinite;
+  }
+  @keyframes animate7 {
+    0% {
+      transform: translate(5vh, 25vh);
+      opacity: 0%;
     }
 
-    .iconDatabase {
-        animation: animate14 10s linear infinite;
+    50% {
+      transform: translate(5vh, 10vh);
+      opacity: 100%;
     }
-    @keyframes animate14 {
-        0% {
-            transform: translate(5vh, 10vh);
-            opacity: 0%;
-        }
 
-        50% {
-            transform: translate(5vh, 10vh);
-            opacity: 100%;
-        }
-
-        100% {
-            transform: translate(5vh, 0vh);
-            opacity: 0%;
-        }
+    100% {
+      transform: translate(5vh, 5vh);
+      opacity: 0%;
     }
+  }
+
+  .iconCss3 {
+    animation: animate8 20s linear infinite;
+  }
+  @keyframes animate8 {
+    0% {
+      transform: translate(10vh, 25vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(15vh, 5vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(20vh, 0vh);
+      opacity: 0%;
+    }
+  }
+
+  .iconHtml5 {
+    animation: animate9 15s linear infinite;
+  }
+  @keyframes animate9 {
+    0% {
+      transform: translate(5vh, 10vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(5vh, -5vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(5vh, -10vh);
+      opacity: 0%;
+    }
+  }
+
+  .iconGit {
+    animation: animate10 10s linear infinite;
+  }
+  @keyframes animate10 {
+    0% {
+      transform: translate(-5vh, 12vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(0vh, 3vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(5vh, -5vh);
+      opacity: 0%;
+    }
+  }
+
+  .iconLinux {
+    animation: animate11 15s linear infinite;
+  }
+  @keyframes animate11 {
+    0% {
+      transform: translate(15vh, 8vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(10vh, 0vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(5vh, -10vh);
+      opacity: 0%;
+    }
+  }
+
+  .iconGoogle {
+    animation: animate12 10s linear infinite;
+  }
+  @keyframes animate12 {
+    0% {
+      transform: translate(5vh, 25vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(5vh, 5vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(5vh, 0vh);
+      opacity: 0%;
+    }
+  }
+
+  .iconJava {
+    animation: animate13 10s linear infinite;
+  }
+  @keyframes animate13 {
+    0% {
+      transform: translate(5vh, 25vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(5vh, 5vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(5vh, 0vh);
+      opacity: 0%;
+    }
+  }
+
+  .iconDatabase {
+    animation: animate14 10s linear infinite;
+  }
+  @keyframes animate14 {
+    0% {
+      transform: translate(5vh, 10vh);
+      opacity: 0%;
+    }
+
+    50% {
+      transform: translate(5vh, 10vh);
+      opacity: 100%;
+    }
+
+    100% {
+      transform: translate(5vh, 0vh);
+      opacity: 0%;
+    }
+  }
 </style>
 
 <script src="https://kit.fontawesome.com/3996778aa0.js" crossorigin="anonymous"

@@ -1,9 +1,5 @@
 body {
     background-color: black;
-    background-image: url('https://media.giphy.com/media/Xb7oOIctrmCw1H6alH/giphy.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;

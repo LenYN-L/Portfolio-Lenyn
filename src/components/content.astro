@@ -1,24 +1,20 @@
 ---
-import DalleAstrounatAwesome from "../images/imagesProfile/astronautRMBGProfile.png";
-import Background from "./background.astro";
-import MyReactComponet from "../components/MyReactComponet";
-import BackgroundImages from "./backgroundImages.astro";
 import SmokeOfLanguages from "./smokeOfLanguages.astro";
+import GlitchTitle from "./glitchTitle.astro";
 ---
 
-<section class="overflow-hidden h-full max-w-full">
-  <!-- class="h-full max-w-full grid grid-cols-1 sm:grid-cols-2 place-items-center justify-around m-auto gap-4 bg-slate-400" -->
-  <!-- <div class="max-w-lg">
-    <img src={DalleAstrounatAwesome} alt="astronaut Awesome" />
-  </div> -->
-  <!-- <Background /> -->
-  <!-- <BackgroundImages /> -->
+<section
+  class="h-full max-w-full grid grid-cols-1 sm:grid-cols-2 place-items-center justify-around m-auto"
+>
+  <GlitchTitle />
   <SmokeOfLanguages />
-  <!-- <div class="border-b-8 border-black max-w-full">
-    <h1
-      class="font-presStart2 text-center text-3xl leading-snug lg:leading-snug lg:text-4xl"
-    >
-      Hello <br /> I'm Lenyn Bejar Full-Stack Developer
-    </h1>   
-  </div> -->
 </section>
+
+<style>
+  section {
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2V2dHRxaWp6OTk1enVscm5lZXVnNHk3OXR0Y3F4ZTdmdjd1cXVtYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLj6dWiZoK2izOGVzs/giphy.gif");
+    background-repeat: round;
+    background-size: contain;
+    background-position: center;
+  }
+</style>

@@ -2,7 +2,7 @@
 import CoffeAnimate from "../images/imagesProyects/coffee-animated-removeBG.gif";
 ---
 
-<div class="container">
+<div class="container absolute lg:relative lg:flex">
   <div class="row">
     <i class="icon iconReact fa-brands fa-react"></i>
     <i class="icon iconGithub fa-brands fa-github"></i>
@@ -18,7 +18,7 @@ import CoffeAnimate from "../images/imagesProyects/coffee-animated-removeBG.gif"
     <i class="icon iconDatabase fa-solid fa-database"></i>
   </div>
   <picture class="containerImgCoffee">
-    <img src={CoffeAnimate} alt="coffee" class="imgCoffee" />
+    <img src={CoffeAnimate} alt="coffee" class="imgCoffee blur-sm" />
   </picture>
 </div>
 
@@ -26,13 +26,15 @@ import CoffeAnimate from "../images/imagesProyects/coffee-animated-removeBG.gif"
   .containerImgCoffee {
     margin-left: auto;
     margin-right: auto;
-    /* display: inline-block; */
-    /* background-color: black; */
+    display: inline-block;
+    background-color: rgb(38, 255, 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .imgCoffee {
     max-width: 400px;
-    /* mix-blend-mode: difference; */
-    /* filter: grayscale(100%); */
+    mix-blend-mode: difference;
+    filter: grayscale(100%) blur(4px);
   }
   .container {
     display: flex;
@@ -53,8 +55,8 @@ import CoffeAnimate from "../images/imagesProyects/coffee-animated-removeBG.gif"
   .icon {
     padding: 0 34px;
     user-select: none;
-    /* color: white; */
-    color: rgb(255, 187, 0);
+    color: white;
+    /* filter: grayscale(100%) blur(4px); */
   }
 
   .iconGithub {

@@ -1,6 +1,10 @@
 body {
     background-color: black;
+    color: #D1FAFD;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    background-image: url('../images/imagesProyects/tronL.jpg');
+    background-size: contain;
+    background-position: center;
 }

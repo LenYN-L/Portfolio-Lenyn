@@ -1,21 +1,41 @@
 ---
-import SmokeOfLanguages from "./smokeOfLanguages.astro";
-import GlitchTitle from "./glitchTitle.astro";
+import MeIA from "../images/imagesProfile/meIA.png";
+import GlitchTitle from "../components/glitchTitle.astro";
 ---
 
 <section
-  class="h-full max-w-full grid grid-cols-1 sm:grid-cols-2 place-items-center justify-around m-auto"
+  class="h-full flex flex-col justify-center gap-7 lg:gap-5 lg:grid lg:grid-cols-2 bg-red-50"
 >
-  <GlitchTitle />
-  <SmokeOfLanguages />
+  <div class="lg:grid lg:place-content-center items-center">
+    <img
+      class="rounded-l-3xl skew-x-6 border-teal-400 border-b-4 border-l-4"
+      src={MeIA}
+      alt="men"
+    />
+  </div>
+  <div class="grid place-content-center">
+    <GlitchTitle />
+  </div>
+  <div class="col-span-2 grid place-content-center bg-red-500">
+    <p class="italic font-bold text-2xl p-4">
+      Desarrollador con experiencia trabajando tanto en el lado del cliente como
+      del servidor, enfocado en construir aplicaciones web, atractivas y fáciles
+      de usar.
+    </p>
+  </div>
+  <div
+    class="col-span-2 flex justify-center text-5xl gap-7 animate-wiggle pb-10"
+  >
+    <div class="absolute">
+      <i class="fa-brands fa-react"></i>
+      <i class="fa-brands fa-node-js"></i>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-square-js"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-git"></i>
+      <i class="fa-brands fa-python"></i>
+      <i class="fa-brands fa-linux"></i>
+    </div>
+  </div>
 </section>
-
-<!-- <style>
-  section {
-    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2V2dHRxaWp6OTk1enVscm5lZXVnNHk3OXR0Y3F4ZTdmdjd1cXVtYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RLj6dWiZoK2izOGVzs/giphy.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    /* filter: blur(8px); */
-    background-size: contain;
-  }
-</style> -->

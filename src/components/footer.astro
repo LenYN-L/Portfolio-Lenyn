@@ -1,6 +1,6 @@
 ---
-import { Icon } from "astro-icon";
 import astronaut from "../images/imagesIA/DALLEastronaut.jpg";
+import { Icon } from "astro-icon";
 const socialNetwork = [
   { icon: "akar-icons:telegram-fill", link: "https://t.me/lenYN12" },
   { icon: "mdi:github", link: "https://github.com/LenYN-L" },
@@ -8,8 +8,8 @@ const socialNetwork = [
 ];
 ---
 
-<footer class="relative text-center mt-5 sm:mt-0 text-white">
-  <section class="flex justify-center gap-4">
+<footer class="relative text-center sm:mt-0 bg-white">
+  <section class="flex justify-center gap-4 pt-3">
     {
       socialNetwork.map((social) => (
         <a href={social.link}>

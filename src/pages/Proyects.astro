@@ -4,6 +4,14 @@ import oldPorfolio from "../images/imagesProyects/oldPortfolio.jpg";
 import shine from "../images/imagesProyects/shine.jpg";
 import ticTacToe from "../images/imagesProyects/tic-tac-toe.png";
 import RemoveBG from "../images/imagesProyects/Remove-BG.png";
+import Books from "../images/imagesProyects/Books.png";
+
+interface Project {
+  name: string;
+  photo: string;
+  link: string;
+  description: string;
+}
 
 const Proyects = [
   {
@@ -12,6 +20,13 @@ const Proyects = [
     link: "https://remove-background-with-cloudinary.vercel.app/",
     description:
       "Remueve el fondo de una imagen mediante inteligencia artificial esto es gracias a la api de Cloudinary.",
+  },
+  {
+    name: "List-Of-Books",
+    photo: Books,
+    link: "https://books-react-ts.vercel.app/",
+    description:
+      "Una pequeña aplicación web de lista de libros que usa React, TypeScript y Tailwind. Lo interesante de esta aplicación es la sincronización de pestañas usando el LocalStorage que permite tener la aplicación abierta en varias pestañas y ver los cambios en todas ellas sin la necesidad de refrescar la página; como es el de añadir un libro a la lista de libros y este cambio verse reflejado en todas las pestañas sin la necesidad de refrescar la página..",
   },
   {
     name: "E-Comerce-Shine",
@@ -37,7 +52,7 @@ const Proyects = [
 ---
 
 <Layout title="Proyects">
-  <section class="lg:pt-10">
+  <section class="lg:pt-10 bg-red-50 p-4">
     <h3 class="font-presStart2">Mi Experiencia a traves de Proyectos</h3>
     <div class="proyect">
       {

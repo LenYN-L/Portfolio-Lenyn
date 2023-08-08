@@ -8,26 +8,18 @@ import {
 } from "astro-navbar";
 ---
 
-<header class="lg:flex py-10 gap-50 items-center">
-  <Astronav closeOnClick>
+<header class="lg:flex py-10 px-4 gap-50 items-center bg-white">
+  <Astronav>
     <div class="flex w-full justify-between">
       <a class="title font-presStart2 text-2xl" href="/">Lenyn.Dev</a>
       <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 transition-transform text-lg">
-          <OpenIcon>
-            <i class="fa-solid fa-bars text-2xl"></i>
-          </OpenIcon>
-          <CloseIcon>
-            <i class="fa-solid fa-xmark text-2xl"></i>
-          </CloseIcon>
-        </MenuIcon>
+        <MenuIcon class="w-5 h-5 text-gray-800 transition-transform" />
       </div>
     </div>
     <MenuItems class="hidden lg:flex">
       <ul
-        class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 border-2 p-1 mt-2 border-neutral-50 lg:border-none lg:mt-0 border-naranjaTron"
+        class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 border-4 p-1 mt-2 border-neutral-900 lg:border-none lg:mt-0"
       >
-        <li class="hover:-translate-y-1"><a href="/Aboutme">About</a></li>
         <li class="hover:-translate-y-1"><a href="Contact">Contact</a></li>
         <li class="hover:-translate-y-1"><a href="Proyects">Proyects</a></li>
       </ul>

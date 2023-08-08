@@ -1,6 +1,6 @@
 ---
-import Navbar from "../components/navbar.astro";
 import Footer from "../components/footer.astro";
+import Navbar from "../components/navbar.astro";
 import "../styles/Layout.css";
 export interface Props {
   title: string;
@@ -24,11 +24,14 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="max-w-screen-xl mx-auto px-5 h-screen">
+  <body class="max-w-screen-xl mx-auto px-5 h-screen lg:skew-x-3 lg:skew-y-3">
     <Navbar />
-    <main>
+    <main class="">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
+
+<script src="https://kit.fontawesome.com/3996778aa0.js" crossorigin="anonymous"
+></script>

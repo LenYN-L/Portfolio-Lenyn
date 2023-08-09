@@ -6,6 +6,8 @@ import {
   OpenIcon,
   CloseIcon,
 } from "astro-navbar";
+
+import CurriculumVitae from "./curriculum-vitae.astro";
 ---
 
 <header class="lg:flex py-10 px-4 gap-50 items-center bg-white">
@@ -20,6 +22,7 @@ import {
       <ul
         class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 border-4 p-1 mt-2 border-neutral-900 lg:border-none lg:mt-0"
       >
+        <li><CurriculumVitae /></li>
         <li class="hover:-translate-y-1"><a href="Contact">Contact</a></li>
         <li class="hover:-translate-y-1"><a href="Proyects">Proyects</a></li>
       </ul>

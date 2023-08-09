@@ -7,6 +7,9 @@ export default {
 			'SpecialElite': ['"Special Elite"', 'Arial']
 		},
 		extend: {
+			colors:{
+				'custom-color-mostasa': '#e4e4d8;'
+			},
 			animation: {
 				wiggle: 'wiggle 10s linear infinite',
 			  },

@@ -52,12 +52,12 @@ const Proyects = [
 ---
 
 <Layout title="Proyects">
-  <section class="lg:pt-10 p-4 bg-custom-color-mostasa">
+  <section class="lg:pt-10 p-4">
     <h3 class="font-presStart2">Mi Experiencia a traves de Proyectos</h3>
     <div class="proyect">
       {
         Proyects.map((proyect) => (
-          <div class="text-gray-800 text-xl text-center card">
+          <div class="text-xl text-center card">
             <h4 class="font-presStart2">{proyect.name}</h4>
             <a href={proyect.link}>
               <img class="my-5" src={proyect.photo} />
@@ -84,7 +84,7 @@ const Proyects = [
       border-radius: 20px;
       backdrop-filter: blur(2px);
       padding: 1em;
-      background: rgb(255 255 255 / 20%);
+      /* background: rgb(255 255 255 / 20%); */
     }
   </style>
 </Layout>

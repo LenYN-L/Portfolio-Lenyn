@@ -20,11 +20,13 @@ import CurriculumVitae from "./curriculum-vitae.astro";
     </div>
     <MenuItems class="hidden lg:flex">
       <ul
-        class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 border-4 p-1 mt-2 border-neutral-900 lg:border-none lg:mt-0"
+        class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 p-2 mt-2 border-neutral-900 lg:mt-0 text-white rounded-l-3xl border-b-8 border-l-4"
       >
-        <li><CurriculumVitae /></li>
+        <li class="hover:-translate-y-1"><CurriculumVitae /></li>
         <li class="hover:-translate-y-1"><a href="Contact">Contact</a></li>
-        <li class="hover:-translate-y-1"><a href="Proyects">Proyects</a></li>
+        <li class="hover:-translate-y-1">
+          <a href="Proyects">Proyects</a>
+        </li>
       </ul>
     </MenuItems>
   </Astronav>

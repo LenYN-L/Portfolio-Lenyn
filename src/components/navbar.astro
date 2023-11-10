@@ -15,16 +15,20 @@ import CurriculumVitae from "./curriculum-vitae.astro";
     <div class="flex w-full justify-between">
       <a class="title font-presStart2 text-2xl" href="/">Lenyn.Dev</a>
       <div class="block lg:hidden">
-        <MenuIcon class="w-5 h-5 text-gray-800 transition-transform" />
+        <MenuIcon class="w-5 h-5 text-white transition-transform" />
       </div>
     </div>
     <MenuItems class="hidden lg:flex">
       <ul
-        class="flex flex-col lg:flex-row lg:gap-5 font-presStart2 p-2 mt-2 lg:mt-0 text-white rounded-l-3xl border-b-8 border-l-4 border-neutral-900"
+        class="flex flex-col gap-3 lg:flex-row lg:gap-5 font-presStart2 p-2 mt-2 lg:mt-0 text-white rounded-l-3xl border-b-8 border-l-4 border-neutral-900"
       >
-        <li class="hover:-translate-y-1"><CurriculumVitae /></li>
-        <li class="hover:-translate-y-1"><a href="Contact">Contact</a></li>
-        <li class="hover:-translate-y-1">
+        <li class="bg-neutral-800 p-2 rounded-md hover:-translate-y-1">
+          <CurriculumVitae />
+        </li>
+        <li class="bg-neutral-800 p-2 rounded-md hover:-translate-y-1">
+          <a href="Contact">Contact</a>
+        </li>
+        <li class="bg-neutral-800 p-2 rounded-md hover:-translate-y-1">
           <a href="Proyects">Proyects</a>
         </li>
       </ul>
